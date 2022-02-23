@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="股票成本计算器.js"></script>
+</head>
+<body>
+<div>此计算机没有考虑交易印花税和手续费</div>
+<script>
+    let calresult = stockcostcalculator();
+    document.write('----------<br>')
+    document.write(calresult.infotext);
+    document.write('----------<br>')
+    document.write('平均交易成本为:', calresult.ave.toString(), ', 交易总价:', calresult.sumcost.toString(), ', 交易总数量：', calresult.sumnumbers.toString());
+</script>
+</body>
+</html>
