@@ -20,7 +20,7 @@ function stockcostcalculator() {
     for (let i = 0; i < prices.length; i++) {
         sumcost+=prices[i]*numbers[i];
         sumnumbers+=numbers[i];
-        infotext=infotext+i.toString()+'.成交价：'+prices[i].toString()+', 成交数量：'+numbers[i].toString()+'.<br>';
+        infotext=infotext+(i+1).toString()+'.成交价：'+prices[i].toString()+', 成交数量：'+numbers[i].toString()+'.<br>';
     }
     let ave=sumcost/sumnumbers;
     return {ave,sumcost,sumnumbers,infotext};
